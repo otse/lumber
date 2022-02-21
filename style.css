@@ -1,0 +1,147 @@
+/*
+this file should mirror style95.css
+
+when you add new css selectors, please add a css comment, something like this
+/--- style2-only ---/
+block:selector {
+
+}
+*/
+
+nyan /* a workaround. the parent of the Win.raw function. expected to break some browsers */ {}
+
+#win {
+	position: absolute;
+	display: block;
+	z-index: 9;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 20px;
+	font-size: 20px;
+    color: #ffff5c;
+	font-family: Georgia;
+	text-transform: lowercase;
+	ttext-shadow: 1px 1px 0 #a5a5a5;
+}
+
+.region {
+	display: block;
+}
+
+.stats {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-family: monospace;
+	font-size: 11px;
+	text-align: right;
+	padding: 5px;
+	color: white;
+	background: transparent !important;
+}
+
+.stats > span {
+	xbackground: rebeccapurple;
+}
+
+.stats > span > span {
+	xbackground: purple;
+}
+
+.marked {
+	color: red;
+}
+
+key {
+	border: 2px solid white;
+	/* color: black; */
+	border-radius: 3px;
+	margin: -2px 0;
+}
+
+
+/* begin of <a><div> (collapse +-) */
+
+a.foo {
+	display: block;
+	margin-bottom: 1px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+div.bar {
+	display: none;
+	margin: 0;
+	margin-left: 1em;
+	background: #313131;
+}
+
+a.foo > span {
+	float: right;
+}
+
+a.foo > span:after {
+	content: "+"; }
+
+a.foo.toggle > span:after {
+	content: "-";} /* \2193 */
+
+div.bar.toggle {
+	display: block;
+}
+
+/* end of <a><div> */
+
+/* begin of <div><span><span> (rpgitem) */
+
+/* https://www.springhole.net/writing_roleplaying_randomators/magicitemgenerator2.htm */
+
+div.rpgitem {
+	display: inline-block;
+	/* border: 1px solid white; */
+}
+
+div.rpgitem > span:first-child {
+	display: block;
+	color: purple;
+	/* font-style: italic; */
+}
+
+div.rpgitem > span:nth-child(2) {
+	display: block;
+	color: black;
+}
+
+/* end of <div><span><span> */
+
+
+/* begin of messageslide */
+
+div.messageslide {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	margin: 0px;
+	padding: 20px;
+	width: 40%;
+}
+
+div.messageslide > span:first-child {
+	display: block;
+	margin-bottom: 3px;
+}
+
+div.messageslide > span:nth-child(2) {
+	display: block;
+}
+
+/* end of messageslide */
+
+.marked {
+	color: red;
+}
+
+.small {
+	width: 300px;
+}
